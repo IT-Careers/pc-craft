@@ -1,0 +1,22 @@
+Parameters:
+* RecommendedRam
+* RecommendedVideo
+* RecommendedProcessor
+* RecommendedStorage
+* Setting
+
+GameSettings:
+* Potato (is_game = 1)
+* Low (is_game = 1)
+* Medium (is_game = 1)
+* High (is_game = 1)
+* Ultra High (is_game = 1)
+* Occasional Usage (is_game = 0)
+* Frequent Usage (is_game = 0)
+* Professional Usage (is_game = 0)
+
+FPS - 0-120
+Efficiency - 0-100%
+
+[ALPHA PLANNING]
+Motherboard, Processor, Ram, Video, HardDisk PowerSupply

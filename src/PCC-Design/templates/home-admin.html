@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PCC</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/site.css" />
+</head>
+<body>
+<div class="container-fluid app-container">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-neon-gradient">
+            <a class="navbar-brand font-weight-bold" asp-controller="Home" asp-action="Index">PCC</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+                <ul class="navbar-nav font-weight-bold">
+                    <li class="nav-item active">
+                        <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" asp-area="Identity" asp-page="/Account/Login">Login</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" asp-area="Identity" asp-page="/Account/Register">Register</a>
+                    </li>
+<!--                    <li class="nav-item active">-->
+<!--                        <a class="nav-link">Admin (placeholder)</a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item active">-->
+<!--                        <a class="nav-link">User (placeholder)</a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item active">-->
+<!--                        <a class="nav-link" asp-area="Identity" asp-page="/Account/Logout">Logout</a>-->
+<!--                    </li>-->
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main role="main">
+        <div class="jumbotron mt-5 mb-5">
+            <h1>Welcome to PC Craft</h1>
+            <hr class="hr-2"/>
+            <h3><a asp-area="Identity" asp-page="/Account/Login">Login</a> and start crafting your PC, or <a asp-area="Identity" asp-page="/Account/Register">Register</a> if you don't have an account.</h3>
+        </div>
+    </main>
+    <footer>
+        <div class="bg-neon-gradient-reversed rounded">
+            <div class="text-white p-3 text-center font-weight-bold">
+                &copy; CopyRight Sanity Web Design Studios 2020. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

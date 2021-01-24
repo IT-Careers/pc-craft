@@ -1,0 +1,11 @@
+Idea: Recommend PC parts
+based on User requirements
+
+Project Name: PCCraft
+
+Entities:
+User
+Part
+Prebuild (Price Range, Type)
+Game
+Review

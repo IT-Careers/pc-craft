@@ -1,0 +1,302 @@
+﻿/*
+    Colors Palette
+*/
+
+.bg-neon-dark {
+    background-color: #101B37;
+}
+
+.text-neon-dark {
+    color: #101B37;
+}
+
+.bg-neon-purple {
+    background-color: #E41476;
+}
+
+.text-neon-purple {
+    color: #E41476;
+}
+
+.bg-neon-cyan {
+    background-color: #02C8ED;
+}
+
+.text-neon-cyan {
+    color: #02C8ED;
+}
+
+.bg-neon-gradient {
+    background-image: linear-gradient(to right, #101b37, #2b2552, #502b69, #7b2c77, #a9257d, #b53895, #bf4aad, #c85cc6, #9982ee, #58a0ff, #00b7fc, #02c8ed);
+}
+
+.bg-neon-gradient-reversed {
+    background-image: linear-gradient(to left, #101b37, #2b2552, #502b69, #7b2c77, #a9257d, #b53895, #bf4aad, #c85cc6, #9982ee, #58a0ff, #00b7fc, #02c8ed);
+}
+
+/*
+    Custom Definitions
+*/
+
+.hr-2 {
+    border: 2px solid black;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-45 {
+    width: 45%;
+}
+
+/*
+    Óverrides
+*/
+
+.app-container {
+    padding: 0;
+}
+
+.app-footer {
+    width: 100%;
+}
+
+.static-footer {
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+    Third Party
+ */
+
+
+/* File Upload */
+
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+.uploader {
+    display: block;
+    clear: both;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+}
+
+    .uploader label {
+        clear: both;
+        width: 100%;
+        padding: 2rem 1.5rem;
+        margin: 0;
+        text-align: center;
+        background: #fff;
+        border-radius: 7px;
+        border: 3px solid #eee;
+        transition: all 0.2s ease;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+        .uploader label:hover {
+            border-color: #101B37;
+        }
+
+        .uploader label.hover {
+            border: 3px solid #101B37;
+            box-shadow: inset 0 0 0 6px #eee;
+        }
+
+            .uploader label.hover #start i.fa {
+                transform: scale(0.8);
+                opacity: 0.3;
+            }
+
+    .uploader #start {
+        clear: both;
+        width: 100%;
+    }
+
+        .uploader #start.hidden {
+            display: none;
+        }
+
+        .uploader #start i.fa {
+            font-size: 50px;
+            transition: all 0.2s ease-in-out;
+        }
+
+    .uploader #file-image {
+        display: inline;
+        width: auto;
+        height: auto;
+        max-width: 180px;
+    }
+
+        .uploader #file-image.hidden {
+            display: none;
+        }
+
+    .uploader #notimage {
+        display: block;
+        float: left;
+        clear: both;
+        width: 100%;
+    }
+
+        .uploader #notimage.hidden {
+            display: none;
+        }
+
+    .uploader input[type=file] {
+        display: none;
+    }
+
+    .uploader div {
+        color: #101B37;
+    }
+
+    .uploader .btn {
+        display: inline-block;
+        margin: 0.5rem 0.5rem 1rem 0.5rem;
+        clear: both;
+        font-family: inherit;
+        font-weight: 700;
+        font-size: 14px;
+        text-decoration: none;
+        text-transform: initial;
+        border: none;
+        border-radius: 0.2rem;
+        outline: none;
+        padding: 0 1rem;
+        height: 36px;
+        line-height: 36px;
+        color: #fff;
+        transition: all 0.2s ease-in-out;
+        box-sizing: border-box;
+        background: #101B37;
+        border-color: #101B37;
+        cursor: pointer;
+    }
+
+/* END File Upload */
+
+/* Part Selection */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radio-tile-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    .radio-tile-group .input-container {
+        position: relative;
+        height: 7rem;
+        width: 7rem;
+        margin: 0.5rem;
+    }
+
+        .radio-tile-group .input-container .radio-button {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        .radio-tile-group .input-container .radio-tile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #E41476;
+            border-radius: 5px;
+            transition: transform 300ms ease;
+        }
+
+        .radio-tile-group .input-container .icon svg {
+            fill: #E41476;
+            width: 3rem;
+            height: 3rem;
+        }
+
+        .radio-tile-group .input-container .radio-tile-label {
+            text-align: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #E41476;
+        }
+
+        .radio-tile-group .input-container .radio-button:checked + .radio-tile {
+            background-color: #E41476;
+            border: 2px solid #E41476;
+            color: white;
+            transform: scale(1.1, 1.1);
+        }
+
+            .radio-tile-group .input-container .radio-button:checked + .radio-tile .icon svg {
+                fill: white;
+                background-color: transparent;
+            }
+
+            .radio-tile-group .input-container .radio-button:checked + .radio-tile .radio-tile-label {
+                color: white;
+                background-color: transparent;
+            }
+
+
+.locked-part .radio-tile {
+    border: 2px solid #909090 !important;
+}
+
+.locked-part .icon svg {
+    fill: #909090 !important;
+}
+
+.locked-part .radio-tile-label {
+    color: #909090 !important;
+}
+
+.locked-part .radio-button:checked + .radio-tile {
+    background-color: #909090 !important;
+    border: 2px solid #909090 !important;
+}
+
+    .locked-part .radio-button:checked + .radio-tile .icon svg {
+        fill: white !important;
+        background-color: transparent !important;
+    }
+
+    .locked-part .radio-button:checked + .radio-tile .radio-tile-label {
+        color: white !important;
+        background-color: transparent !important;
+    }
+
+/* END Part Selection */
+
+/* Slider overrides */
+
+.rs-selected {
+    background-color: transparent;
+    background-image: linear-gradient(to right, #101b37, #2b2552, #502b69, #7b2c77, #a9257d, #b53895, #bf4aad, #c85cc6, #9982ee, #58a0ff, #00b7fc, #02c8ed);
+}
+
+/* END Slider overrides */
