@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PCC.Services.Models", "Serv
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{D65284CF-A362-481B-8692-7F2C842E7E19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoMapperConfiguration", "Common\AutoMapperConfiguration\AutoMapperConfiguration.csproj", "{A7248860-7DE1-44E7-BBF3-84AD66BD9B01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoMapperConfiguration", "Common\AutoMapperConfiguration\AutoMapperConfiguration.csproj", "{A7248860-7DE1-44E7-BBF3-84AD66BD9B01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{1DDA8B94-16E6-424D-8F2E-77186E11B04A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +61,10 @@ Global
 		{A7248860-7DE1-44E7-BBF3-84AD66BD9B01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7248860-7DE1-44E7-BBF3-84AD66BD9B01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7248860-7DE1-44E7-BBF3-84AD66BD9B01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DDA8B94-16E6-424D-8F2E-77186E11B04A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DDA8B94-16E6-424D-8F2E-77186E11B04A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DDA8B94-16E6-424D-8F2E-77186E11B04A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DDA8B94-16E6-424D-8F2E-77186E11B04A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -36,6 +36,11 @@ namespace AutoMapperConfiguration
                         {
                             mapperConfig.CreateMap(type, toType);
                         }
+
+                        if(typeof(IHaveCustomMappings).IsAssignableFrom(type))
+                        {
+                            ((IHaveCustomMappings) Activator.CreateInstance(type)).CreateMappings(mapperConfig);
+                        }
                     }
                 }
             });
