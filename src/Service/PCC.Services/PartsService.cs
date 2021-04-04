@@ -19,6 +19,13 @@ namespace PCC.Services
 
         public async Task<bool> CreateProcessorPart(ProcessorServiceModel processorServiceModel)
         {
+            if (string.IsNullOrEmpty(processorServiceModel.Brand))
+            {
+                // TODO: Move message to constant
+                // Refactor this
+                throw new ArgumentException("Processor Brand cannot be null or empty!");
+            }
+
             Processor processorEntity = processorServiceModel.To<Processor>();
 
             processorEntity.Id = Guid.NewGuid().ToString();

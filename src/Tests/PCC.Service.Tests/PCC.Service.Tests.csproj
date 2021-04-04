@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.4" />
+    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Data\PCC.Data.Models\PCC.Data.Models.csproj" />
+    <ProjectReference Include="..\..\Data\PCC.Data\PCC.Data.csproj" />
+    <ProjectReference Include="..\..\Service\PCC.Services.Models\PCC.Services.Models.csproj" />
+    <ProjectReference Include="..\..\Service\PCC.Services\PCC.Services.csproj" />
+  </ItemGroup>
+
+</Project>
